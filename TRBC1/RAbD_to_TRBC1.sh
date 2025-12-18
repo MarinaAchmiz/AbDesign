@@ -3,9 +3,9 @@ set -e
 # Relax of input structure
 $ROSETTA_m/source/bin/relax.static.linuxgccrelease \
   -database /mnt/san01/data/m.r.achmiz/Rosetta/rosetta.binary.linux.release-371/main/database \
-  -in:file:s /mnt/san01/data/m.r.achmiz/bcma/7AMP_AHo_agab.pdb \
-  -out:path:pdb /mnt/san01/data/m.r.achmiz/bcma/relax \
-  -out:path:score /mnt/san01/data/m.r.achmiz/bcma/relax \
+  -in:file:s /mnt/san01/data/m.r.achmiz/trbc1/7AMP_AHo_agab.pdb \
+  -out:path:pdb /mnt/san01/data/m.r.achmiz/trbc1/relax \
+  -out:path:score /mnt/san01/data/m.r.achmiz/trbc1/relax \
   -relax:fast
 $ROSETTA_m/source/bin/antibody_designer.static.linuxgccrelease \
   -s 7AMP_AHo_agab_0001.pdb  \
